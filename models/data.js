@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+mongoose.Promise = require('bluebird');
 const vmSchema = new mongoose.Schema({
   id: Number,
   name: String,
