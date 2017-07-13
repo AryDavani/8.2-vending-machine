@@ -1,8 +1,15 @@
+const mongoose = require('mongoose');
+const vmSchema = new mongoose.Schema({
+  id: Number,
+  name: String,
+  price: Number,
+  desciption: String,
+  quantity: Number,
+  purchased: Number,
+  purchaseDate: [Date],
+  change: Number
+});
 
-module.exports = [
-  { id: 1, description: 'lays chips', cost: 1.00 },
-  { id: 2, description: 'snickers', cost: 1.75 },
-  { id: 3, description: 'starburts', cost: 1.25 },
-  { id: 4, description: 'doritos', cost: 1.00 },
-  { id: 5, description: 'gum', cost: 0.75 },
-]
+const Snack = mongoose.model('snack', vmSchema);
+
+module.exports = Snack;
