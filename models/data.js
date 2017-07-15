@@ -1,16 +1,15 @@
 const mongoose = require('mongoose');
-mongoose.Promise = require('bluebird');
+
 const vmSchema = new mongoose.Schema({
-  id: Number,
   name: String,
   price: Number,
   desciption: String,
   quantity: Number,
-  purchased: Number,
+  purchased: {type: Number, Default: 0},
   purchaseDate: [Date],
   change: Number
 });
 
-const Snack = mongoose.model('snack', vmSchema);
+const Snack = mongoose.model('Snack', vmSchema);
 
 module.exports = Snack;

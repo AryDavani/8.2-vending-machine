@@ -1,6 +1,6 @@
 {
   "development": {
-    "mongoURL": "mongodb://localhost:27017/vendingdb_dev"
+    "mongoURL": "mongodb://localhost:27017/vendingdb"
   },
   "test": {
     "mongoURL": "mongodb://localhost:27017/vendingdb_test"

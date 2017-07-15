@@ -12,6 +12,6 @@ module.exports = function(app) {
 
   app.post('/api/vendor/items', Controller.addItem);
 
-  app.put('/api/vendor/items/:itemId', Controller.updateItem);
+  app.patch('/api/vendor/items/:itemId', Controller.updateItem);
 
 };
