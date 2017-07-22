@@ -1,4 +1,4 @@
-const Snack = require('./models/data');
+const Snack = require('./data');
 const mongoose = require('mongoose');
 
 mongoose.connect('mongodb://localhost:27107/vendingdb');

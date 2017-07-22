@@ -7,7 +7,7 @@ const vmSchema = new mongoose.Schema({
   quantity: Number,
   purchased: {type: Number, Default: 0},
   purchaseDate: [Date],
-  change: Number
+  paid: Number
 });
 
 const Snack = mongoose.model('Snack', vmSchema);
